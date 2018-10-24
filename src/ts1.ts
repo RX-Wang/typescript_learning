@@ -15,8 +15,8 @@ x[2] = '2';
 /** 3、枚举，元素默认从0 开始。 */
 enum Color {Red = 1, Green, Blue};
 let colorName: string = Color[2];
-// console.log(Color);
-// console.log(colorName);
+console.log(Color);
+console.log(colorName);
 
 /** 4、any  让变量不进行类型检查，直接通过编译 */
 
@@ -26,16 +26,16 @@ aAny = false;
 
 // 数组类型 any
 let anyAray: any[] = [true, 1, '2', [1, 2, 3, 4], {name: 'Diana'}];
-console.log(anyAray);
+// console.log(anyAray);
 
 // 泛型 any
 let aAnyArray: Array<any> = [1, '2', true, {name: 'Diana'}];
-console.log(aAnyArray);
+// console.log(aAnyArray);
 
 // 元组 any
 let anotherAnyArray: [any] = [true];
 anotherAnyArray[1] = 1;
-console.log(anotherAnyArray);
+// console.log(anotherAnyArray);
 
 /** 5、Void  没有任何类型,或函数没有任何返回值 */
 
